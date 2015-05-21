@@ -1,5 +1,16 @@
-Set up local Deis platform
+Overview
 ============================
+
+This project contains a shell script which helps you quickly set up a local Deis cluster using Vagrant and VirtualBox. 
+
+Deis is an open-source platform-as-a-service (PaaS) which lets you run Docker-based containers on a cluster of CoreOS machines.
+
+For more information on Deis, please see: http://docs.deis.io/en/latest/
+
+Fixes / additions are welcome via pull requests.
+
+Pre-requisites
+===========================
 
 *Install Vagrant v1.6.5+*
 
@@ -9,7 +20,10 @@ https://www.vagrantup.com/
 
 https://www.virtualbox.org/wiki/Downloads
 
-*Run install script*
+Installation
+=========================
+
+Run the install script as follows:
 
     cd ./setup/
     ./setup.sh
@@ -18,8 +32,8 @@ https://www.virtualbox.org/wiki/Downloads
 At the end of the script (after about 15 - 30 minutes), it will prompt you to create an account with the local Deis cluster. Please enter a username, password, and email address when prompted.
 
 
-Setup and deploy test application to Deis cluster
-=================================================
+Deploy a test Docker application (container) to the Deis cluster
+====================================================================
 
 Clone the application from Github:
 
